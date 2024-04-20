@@ -1,0 +1,23 @@
+#books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bookcase {
+    width: 300px;
+    height: 300px;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.bookcase img {
+    max-width: 100%;
+    height: auto;
+    transition: scale .5s ease-in-out;
+}
+
+.bookcase img:hover {
+    scale: 1.2;
+}

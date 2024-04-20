@@ -1,0 +1,134 @@
+.main {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 160px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 36px;
+}
+
+.menu ul li a {
+    padding: 14px 50px;
+    background-color: transparent;
+    border: 1.5px solid var(--secondary-color);
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu ul li a:hover {
+    transform: translate(4px);
+    box-shadow: 4px 4px 0px var(--secondary-color);
+}
+
+nav ul li {
+    display: flex;
+}
+
+#icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+#icon:active {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu nav img {
+    display: none;
+}
+
+.menu #btn-menu {
+    display: none;
+}
+
+/* cover */
+
+.container-cover {
+    width: 100%;
+    height: 800px;
+}
+
+.cover {
+    max-width: 1000px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-cover .text {
+    max-width: 400px;
+}
+
+.container-cover .text h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.container-cover .text p {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.container-cover .text h1,
+p {
+    color: #ffddd2;
+}
+
+.container-cover .cover .text input {
+    padding: 16px 25px;
+    border: none;
+    font-size: 15px;
+    margin-top: 40px;
+    background: #ffddd2;
+    color: #fb79ae;
+    border: 1.5px solid #ffddd2;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.container-cover .text input:hover {
+    scale: 1.1;
+}
+
+.container-cover .svg img {
+    width: 350px;
+}

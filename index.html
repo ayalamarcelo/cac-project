@@ -3,50 +3,86 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/books.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/global.css">
     <title>Website</title>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="src/dark-logo.png" alt="logo" id="logo">
+    <section id="home">
+        <header>
+            <img src="#" alt="" id="">
+            <nav>
+                <ul id="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#sign-up">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container-cover">
+                <div class="cover">
+                    <div class="text">
+                        <h1>Create beautiful, branden emails that make you look like a pro</h1>
+                        <p>Keep your audience engaged with email marketing. Mailchimp's campaign builder is easy to use,
+                            packed full of features, and designed to grow with your business.</p>
+                        <input type="button" value="Learn more">
+                    </div>
+                    <div class="svg">
+                        <img src="./assets/JRR-Tolkien.svg" id="picture">
+                    </div>
+                </div>
             </div>
-            <div class="menu">
-                <img src="./src/menu-black.svg" id="btn-menu">
-                <div id="bars-menu"></div>
-                <nav id="nav">
+        </main>
+    </section>
+    <section id="books">
+        <div class="bk-wrap">
+            <div class="bookcase" id="book1"></div>
+            <div class="bookcase" id="book2"></div>
+            <div class="bookcase" id="book3"></div>
+        </div>
+    </section>
+    <section class="container" id="login">
+        <div class="form-content">
+        <h1 id="title-s">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <p>Do you need an account?
+                        <a href="#">Press Here</a>
+                    </p>
+                    <div class="input-field">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <span>Keep Logged In</span>
+                    </div>
+                </div>
+                <button id="logged" type="button">Login</button>
+                <div class="links">
                     <ul>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Sign Up</a></li>
-                        <li><img src="./src/toggle-on.svg" alt="icon" id="icon"></li>
+                        <li><a href="#">Forgot password?</a></li>
+                        <li><a href="#">Can't log in?</a></li>
                     </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <div class="container-cover">
-            <div class="cover">
-                <div class="text">
-                    <h1>Create beautiful, branden emails that make you look like a pro</h1>
-                    <p>Keep your audience engaged with email marketing. Mailchimp's campaign builder is easy to use,
-                        packed full of features, and designed to grow with your business.</p>
-                    <input type="button" value="Learn more">
                 </div>
-                <div class="svg">
-                    <img src="./src/img-black.png" id="picture">
-                </div>
-            </div>
+            </form>
         </div>
-    </main>
+    </section>
 
-    
-    <script src="./index.js"></script>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
