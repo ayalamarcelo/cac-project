@@ -21,7 +21,7 @@ form {
     padding: 50px 60px 70px;
     text-align: center;
     background: #f1f5f9;
-    border-radius: 5px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.3);
 }
 
 .form-content h1 {
