@@ -64,11 +64,55 @@ section {
     overflow-y: auto;
 }
 
+.icons {
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
 @keyframes blink {
-    0%, 50%, 100% {
+
+    0%,
+    50%,
+    100% {
         opacity: 1;
     }
-    25%, 75% {
+
+    25%,
+    75% {
         opacity: 0;
     }
+}
+
+@media (max-width: 768px) {
+    .icons {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .nav ul {
+        padding: 20px;
+
+        .nav ul li {
+            margin-bottom: 10px;
+        }
+
+        .nav ul a {
+            display: block;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+    }
+
+    #logo {
+        display: none;
+    }    
 }
