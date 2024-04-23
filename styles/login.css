@@ -164,4 +164,8 @@ span {
     .form-content {
         width: 88%;
     }
+
+    .links a {
+        font-size: 13px;
+    }
 }
