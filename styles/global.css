@@ -85,9 +85,10 @@ section {
     }
 }
 
-@media (max-width: 768px) {
-    .icons {
-        display: block;
+@media (width < 600px) {
+    
+    header {
+        padding: 44px 40px;
     }
 
     .nav {

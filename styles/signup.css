@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+User
 * {
     padding: 0;
     margin: 0;
@@ -46,8 +46,6 @@ form {
     font-size: 22px;
     margin-bottom: 40px;
     color: #604a92;
-    position: relative;
-    row-gap: 15px;
 }
 
 .input-group {
@@ -75,11 +73,6 @@ input::placeholder {
     color: #000;
 }
 
-.input-field i {
-    margin-left: 15px;
-    color: #58595b;
-}
-
 form p {
     color: #58595b;
     text-align: left;
@@ -88,7 +81,6 @@ form p {
 
 form p a {
     color: #58595b;
-    margin-left: 5px;
     transition: .4s ease-in-out;
     text-decoration: none;
 }
@@ -105,17 +97,10 @@ form p a:hover {
 }
 
 #logged {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 20px 20px 0;
-    width: 120px;
-    height: 40px;
+    padding: 15px 40px;
     color: #fff;
     font-size: 14px;
-    border-style: none;
-    text-decoration: none;
+    border: none;
     background: #604a92;
     border-radius: 2px;
     cursor: pointer;
@@ -123,29 +108,17 @@ form p a:hover {
 }
 
 #logged:hover {
-    color: #fff;
     background: #000;
 }
 
-.checkbox {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    font-size: 14px;
-    text-align: left;
-    gap: 10px;
-}
-
-#checkbox {
-    width: 20px;
-    height: auto;
-    align-items: left;
-    background: #58595b;
+.links ul {
+    padding: 0;
+    margin: 0;
 }
 
 .links ul, li {
+    text-align: center;
     display: flex;
-    gap: 5px;
     font-size: 14px;
 }
 
