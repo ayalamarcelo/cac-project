@@ -1,68 +1,87 @@
-.main {
+main {
     display: flex;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    height: 100%;
-    margin: auto;
+    justify-content: center;
+    padding: 20px;
 }
 
 .container-cover {
+    display: flex;
+    max-width: 1200px;
     width: 100%;
-    height: 800px;
 }
 
 .cover {
-    max-width: 1000px;
-    height: 100vh;
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
+    margin-top: 15vh;
+    width: 100%;
 }
 
-.container-cover .text {
-    max-width: 500px;
+.text {
+    max-width: 50%;
+    color: #ffe5ec;
 }
 
-.container-cover .text h1 {
-    font-size: 30px;
-    font-weight: 600;
+.text h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
-.container-cover .text p {
-    font-size: 16px;
-    margin-top: 30px;
+.text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
-.container-cover .text h1,
-p {
-    color: #000000;
-}
-
-.container-cover .cover .text input {
-    width: 15em; 
-    height: 4em;
-    border: none;
-    border-radius: 5px;
-    font-size: 15px;
+.text input[type="button"] {
+    padding: 16px 70px;
     text-transform: uppercase;
-    margin-top: 40px;
-    background: #000000;
+    border: none;
     color: #fff;
+    background: #2b2d42;
+    border-radius: 5px;
     cursor: pointer;
-    margin-left: 5em;
-    transition: .2s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
-.container-cover .cover .text input:hover {
-    background: #fff;
-    color: #000000;
+.text input[type="button"]:hover {
+    background: #121111;
+    color: fff;
 }
 
-.container-cover .svg img {
-    width: 350px;
+.svg {
+    max-width: 50%;
+    margin-left: 20px;
+}
+
+img {
+    width: 400px;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .container-cover {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .cover {
+        flex-direction: column; 
+        align-items: center;
+        margin-top: 15vh;
+    }
+
+    .text, .svg {
+        max-width: 100%; 
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    #picture {
+        width: 300px;
+    }
 }

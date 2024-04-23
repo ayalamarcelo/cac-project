@@ -1,8 +1,7 @@
 #footer {
     width: 100%;
     height: 10vh;
-    background-color: #f1f5f9;
-    color: #58595b;
+    color: #ffe5ec;
     font-size: 14px;
 }
 
@@ -16,12 +15,12 @@
 
 .footer-right ul li a {
     text-decoration: none;
-    color: #58595b;
+    color: #ffe5ec;
     transition: .4s ease-in-out;
 }
 
 .footer-right ul li a:hover {
-    color: #000;
+    color: #b97396;
 }
 
 .footer-right ul li {
@@ -31,5 +30,5 @@
 }
 
 .footer-content p {
-    color: #58595b;
+    color: #ffe5ec;
 }
