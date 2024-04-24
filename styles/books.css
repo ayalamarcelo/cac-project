@@ -1,0 +1,40 @@
+#books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.bookcase {
+    width: 300px;
+    height: 300px;
+    margin-right: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.bookcase img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.bookcase:hover img {
+    transform: scale(0.9);
+    box-shadow: 0 0 20px 10px rgba(172, 109, 149, 0.6);
+}
+
+
+@media (max-width: 768px) {
+
+    #books {
+        min-height: 200vh;
+    }
+
+    .bookcase {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,34 @@
+#footer {
+    width: 100%;
+    height: 10vh;
+    color: #ffe5ec;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.footer-right ul li a {
+    text-decoration: none;
+    color: #ffe5ec;
+    transition: .4s ease-in-out;
+}
+
+.footer-right ul li a:hover {
+    color: #b97396;
+}
+
+.footer-right ul li {
+    display: inline-block;
+    margin-right: 20px;
+    transition: .4s ease-in-out;
+}
+
+.footer-content p {
+    color: #ffe5ec;
+}
