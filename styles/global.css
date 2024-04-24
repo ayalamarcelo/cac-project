@@ -15,6 +15,7 @@ body {
     height: 100%;
 }
 
+
 header {
     width: 100%;
     display: flex;
@@ -60,8 +61,7 @@ header {
 section {
     width: 100%;
     float: left;
-    position: relative;
-    overflow-y: auto;
+    position: relative;   
 }
 
 .icons {
@@ -73,20 +73,17 @@ section {
 
 @keyframes blink {
 
-    0%,
-    50%,
-    100% {
+    0%, 50%, 100% {
         opacity: 1;
     }
 
-    25%,
-    75% {
+    25%, 75% {
         opacity: 0;
     }
 }
 
 @media (width < 600px) {
-    
+
     header {
         padding: 44px 40px;
     }
@@ -115,5 +112,5 @@ section {
 
     #logo {
         display: none;
-    }    
+    }
 }

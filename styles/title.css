@@ -1,98 +1,88 @@
-#home {
-    background: url(../assets/wave.svg) no-repeat;
-    background-size: cover;
-}
-
-main {
+article {
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 
-.container-cover {
+.wrap-ttl {
     display: flex;
     max-width: 1200px;
     width: 100%;
 }
 
-.cover {
+.ttl-cover {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    margin-top: 25vh;
+    margin-top: 15vh;
     width: 100%;
+    overflow-y: hidden;
 }
 
-.text {
+.t-text {
     max-width: 50%;
     color: #ffe5ec;
 }
 
-.text h1 {
-    font-size: 34px;
+.t-text h1 {
+    font-size: 28px;
     margin-bottom: 10px;
     text-align: left;
     color: #f4acb7;
 }
 
-.text p {
-    font-size: 18px;
+.t-text p {
+    font-size: 17px;
     margin-bottom: 20px;
     text-align: left;
 }
 
-.text input[type="button"] {
+.t-text input[type="button"] {
     padding: 16px 70px;
     text-transform: uppercase;
     border: none;
     color: #fff;
-    background: #2b2d42;
+    background: #000;
     border-radius: 5px;
     cursor: pointer;
     transition: .3s ease-in-out;
 }
 
-.text input[type="button"]:hover {
-    background: #121111;
+.t-text input[type="button"]:hover {
+    background: #252424;
     color: fff;
 }
 
-.svg {
+.title-svg {
     max-width: 50%;
     margin-left: 20px;
 }
 
-#picture {
-    width: 100%;
+#figure {
+    width: 400px;
     height: auto;
 }
 
 @media (max-width: 768px) {
-    .container-cover {
+    .wrap-ttl {
         flex-direction: column; 
         align-items: center;
     }
 
-    .cover {
+    .ttl-cover {
         flex-direction: column; 
         align-items: center;
-        margin-top: 10vh;
+        margin-top: 9vh;
     }
 
-    .text, .svg {
+    .t-text, .title-svg {
         max-width: 100%; 
         text-align: center;
         margin: 20px 0;
     }
 
-    #picture {
-        width: 100%;
-        height: auto;
-        transition: .3s ease-in-out;
-    }
-    
-    #picture:hover {
-        scale: 1.2;
+    #figure {
+        width: 300px;
     }
 }

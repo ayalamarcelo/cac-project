@@ -160,6 +160,16 @@ span {
     font-size: 14px;
 }
 
+.logo a {
+    color: #f1f5f9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 @media (width < 768px) {
     .form-content {
         width: 88%;
