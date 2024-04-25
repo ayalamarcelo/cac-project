@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     font-size: 100%;
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(to top, #5d4992, #c57896);
+    background: linear-gradient(-45deg, #4158D0, #e560dc, #ffb374, #ef5f5f, #d840b6);
     height: 100%;
 }
 
