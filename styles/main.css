@@ -20,26 +20,29 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    margin-top: 25vh;
+    margin-top: 20vh;
     width: 100%;
 }
 
 .text {
     max-width: 50%;
-    color: #ffe5ec;
+    color: #f7d68e;
+    padding: 20px 55px;
+    background: #fe607c;
 }
 
 .text h1 {
-    font-size: 34px;
+    font-size: 40px;
     margin-bottom: 10px;
     text-align: left;
-    color: #f4acb7;
+    text-transform: uppercase;
 }
 
 .text p {
     font-size: 18px;
     margin-bottom: 20px;
     text-align: left;
+    color: #f4acb7;
 }
 
 .text input[type="button"] {
@@ -66,6 +69,7 @@ main {
 #picture {
     width: 100%;
     height: auto;
+    max-width: 450px;
 }
 
 @media (max-width: 768px) {
@@ -93,6 +97,6 @@ main {
     }
     
     #picture:hover {
-        scale: 1.2;
+        scale: 0.9;
     }
 }

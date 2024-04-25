@@ -10,8 +10,7 @@ book3.innerHTML = `<img src="${imgUrls[2]}"/>`;
 
 footer.innerHTML = `<div class="footer-content">
                     <div class="footer-left">
-                    <p>&copy; 2024 All rights reserved
-                    </p>
+                    <p>&copy; 2024 All rights reserved to Marcelo Ayala</p>
                     </div>
                     <div class="footer-right">
                     <nav>

@@ -7,14 +7,15 @@
 }
 
 body {
+    height: 100%;
     display: flex;
     flex-direction: column;
     font-size: 100%;
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(to top, #5d4992, #c57896);
-    height: 100%;
+    background: linear-gradient(-45deg, #4158D0, #e560dc, #ffb374, #ef5f5f, #d840b6);
+    background-size: 400% 400%;
+    animation: color 12s ease-in-out infinite;
 }
-
 
 header {
     width: 100%;
@@ -47,7 +48,6 @@ header {
 }
 
 #logo {
-    font-size: medium;
     cursor: pointer;
     text-transform: uppercase;
     transition: opacity 0.3s;
@@ -58,12 +58,6 @@ header {
     animation: blink 1s infinite;
 }
 
-section {
-    width: 100%;
-    float: left;
-    position: relative;   
-}
-
 .icons {
     font-size: 2.8rem;
     color: #fff;
@@ -71,8 +65,21 @@ section {
     display: none;
 }
 
-@keyframes blink {
+@keyframes color {
+    0% {
+        background-position: 0% 50%;
+    }
 
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes blink {
     0%, 50%, 100% {
         opacity: 1;
     }
@@ -82,8 +89,7 @@ section {
     }
 }
 
-@media (width < 600px) {
-
+@media (max-width: 600px) {
     header {
         padding: 44px 40px;
     }
@@ -97,17 +103,18 @@ section {
     }
 
     .nav ul {
-        padding: 20px;
+        text-align: center;
+        margin-top: 15px;
+    }
 
-        .nav ul li {
-            margin-bottom: 10px;
-        }
+    .nav ul li {
+        margin-bottom: 10px;
+    }
 
-        .nav ul a {
-            display: block;
-            font-size: 1.1rem;
-            text-align: center;
-        }
+    .nav ul a {
+        display: block;
+        font-size: 1.1rem;
+        text-align: center;
     }
 
     #logo {
