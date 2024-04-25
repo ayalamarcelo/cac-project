@@ -8,6 +8,7 @@ book1.innerHTML = `<img src="${imgUrls[0]}"/>`;
 book2.innerHTML = `<img src="${imgUrls[1]}"/>`;
 book3.innerHTML = `<img src="${imgUrls[2]}"/>`;
 
+
 footer.innerHTML = `<div class="footer-content">
                     <div class="footer-left">
                     <p>&copy; 2024 All rights reserved to Marcelo Ayala</p>
