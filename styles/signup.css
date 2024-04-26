@@ -32,13 +32,13 @@ form {
     row-gap: 15px;
 }
 
-.form-wrap{
+.form-wrap {
     width: 100%;
     max-width: 500px;
     padding: 25px 20px 25px;
     text-align: center;
     background: #f1f5f9;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
 
@@ -60,7 +60,8 @@ form {
     transition: max-height 0.3s;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     background: #e4eaee;
     border: 0;
@@ -116,7 +117,8 @@ form p a:hover {
     margin: 0;
 }
 
-.links ul, li {
+.links ul,
+li {
     text-align: center;
     display: flex;
     font-size: 14px;
@@ -137,14 +139,23 @@ span {
     font-size: 14px;
 }
 
-.logo a {
-    color: #f1f5f9;
+.logo {
     position: fixed;
-    top: 0;
-    left: 0;
-    padding: 18px 60px;
-    text-decoration: none;
-    text-transform: uppercase;
+    top: 10px;
+    left: 20px;
+    background: #fe607c;
+    padding: 7px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+}
+
+.logo a {
+    padding: 30px 20px;
+}
+
+.logo:hover {
+    background: #000;
 }
 
 @media (width < 768px) {
