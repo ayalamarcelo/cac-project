@@ -160,14 +160,23 @@ span {
     font-size: 14px;
 }
 
-.logo a {
-    color: #f1f5f9;
+.logo {
     position: fixed;
-    top: 0;
-    left: 0;
-    padding: 18px 60px;
-    text-decoration: none;
-    text-transform: uppercase;
+    top: 10px;
+    left: 20px;
+    background: #fe607c;
+    padding: 7px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+}
+
+.logo a {
+    padding: 30px 20px;
+}
+
+.logo:hover {
+    background: #000;
 }
 
 @media (width < 768px) {
