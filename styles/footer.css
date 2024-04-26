@@ -32,3 +32,13 @@
 .footer-content p {
     color: #ffe5ec;
 }
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        justify-content: center;
+    }
+
+    .footer-left {
+        display: none;
+    }
+}
