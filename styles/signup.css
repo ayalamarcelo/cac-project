@@ -13,6 +13,8 @@ body {
     font-family: "Poppins", sans-serif;
     background: linear-gradient(-45deg, #4158D0, #e560dc, #ffb374, #ef5f5f, #d840b6);
     height: 100%;
+    background-size: 400% 400%;
+    animation: color 12s ease-in-out infinite;
 }
 
 .container {
@@ -143,7 +145,7 @@ span {
     position: fixed;
     top: 10px;
     left: 20px;
-    background: #fe607c;
+    background: transparent;
     padding: 7px 0;
     cursor: pointer;
     border-radius: 3px;
@@ -155,7 +157,22 @@ span {
 }
 
 .logo:hover {
-    background: #000;
+    background: #00000077;
+}
+
+
+@keyframes color {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @media (width < 768px) {

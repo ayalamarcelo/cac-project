@@ -42,14 +42,14 @@ article {
     font-size: 15px;
     border: none;
     color: #fff;
-    background: #f08080;
+    background: #252525;
     cursor: pointer;
     transition: .3s ease-in-out;
     border-radius: 5px;
 }
 
 .t-text input[type="button"]:hover {
-    background: #f4978e;
+    background: #212121;
     color: fff;
 }
 
