@@ -62,6 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     displayBooks();
     insertFooterHTML();
+    AOS.init();
 });
 
-AOS.init();
