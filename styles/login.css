@@ -11,10 +11,6 @@ body {
     flex-direction: column;
     font-size: 100%;
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(-45deg, #4158D0, #e560dc, #ffb374, #ef5f5f, #d840b6);
-    height: 100%;
-    background-size: 400% 400%;
-    animation: color 12s ease-in-out infinite;
 }
 
 .container {
@@ -23,6 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #2b3035;
 }
 
 form {
@@ -39,15 +36,15 @@ form {
     max-width: 470px;
     padding: 50px 60px 70px;
     text-align: center;
-    background: #f1f5f9;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+    background: #f8f9fa;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.3);
     border-radius: 5px;
 }
 
 .form-content h1 {
     font-size: 22px;
     margin-bottom: 40px;
-    color: #604a92;
+    color: #2b3035;
     position: relative;
     row-gap: 15px;
 }
@@ -92,7 +89,7 @@ form p a {
 }
 
 form p a:hover {
-    color: #604a92;
+    color: #20c997;
 }
 
 .button-field {
@@ -106,23 +103,36 @@ form p a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin: 20px 20px 0;
+    padding: 0;
+    margin: 20px;
     width: 120px;
     height: 40px;
     color: #fff;
     font-size: 14px;
-    border-style: none;
-    text-decoration: none;
-    background: #604a92;
+    border: none;
+    background: #2b6ef0;
     border-radius: 2px;
     cursor: pointer;
-    transition: .4s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+input[type="submit"].input-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: inherit;
+    color: inherit;
+    font: inherit;
+    cursor: inherit;
+    text-align: center;
+    padding: 0;
 }
 
 #logged:hover {
-    color: #fff;
-    background: #000;
+    background: #034edf;
 }
 
 .checkbox {
@@ -141,7 +151,8 @@ form p a:hover {
     background: #58595b;
 }
 
-.links ul, li {
+.links ul,
+li {
     display: flex;
     gap: 30px;
     font-size: 14px;
@@ -154,31 +165,24 @@ form p a:hover {
 }
 
 .links a:hover {
-    color: #604a92;
-}
-
-span {
-    color: #58595b;
-    font-size: 14px;
-}
-
-.logo {
-    position: fixed;
-    top: 10px;
-    left: 20px;
-    background: transparent;
-    padding: 7px 0;
-    cursor: pointer;
-    border-radius: 3px;
-    transition: .3s ease-in-out;
+    color: #20c997;
 }
 
 .logo a {
-    padding: 30px 20px;
+    position: fixed;
+    top: 15px;
+    left: 60px;
+    font-size: 20px;
+    background: #20c997;
+    padding: 6px 10px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50px;
+    transition: .2s ease-in-out;
 }
 
-.logo:hover {
-    background: #00000077;
+.logo a:hover {
+    transform: scale(0.9);
 }
 
 @keyframes color {
