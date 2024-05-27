@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9567d7dc41.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/signup.css">
     <title>Sign Up</title>
 </head>
@@ -13,29 +14,29 @@
     <section class="container" id="sign-up">
         <div class="logo">
             <a href="../index.html">
-                <i class="fa-solid fa-arrow-left-long" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
             </a>
         </div>
-        <div class="form-wrap">
+        <div class="form-wrap" data-aos="zoom-in-up" data-aos-duration="1000">
             <h1 id="frm-title">Sign Up</h1>
-            <form>
+            <form id="registrationForm">
                 <div class="input-group">
                     <div class="input-field">
-                        <input type="text" placeholder="Username">
+                        <input type="text" id="username" placeholder="Username" required>
                     </div>
                     <div class="input-field">
-                        <input type="email" placeholder="Email">
+                        <input type="email" id="email" placeholder="Email" required>
                     </div>
                     <div class="input-field">
-                        <input type="number" placeholder="Age">
+                        <input type="number" id="age" placeholder="Age" required>
                     </div>
                     <div class="input-field">
-                        <input type="password" placeholder="Password">
+                        <input type="password" id="password" placeholder="Password" required>
                     </div>
-                    <div class="input-field">
-                        <input type="date">
+                    <div class="input-field" required>
+                        <input type="date" id="birthdate" required>
                     </div>
-                    <select name="country" id="" placeholder="Country">
+                    <select name="country" id="country" required>
                         <option value="none">Country</option>
                         <option value="1">Argentina</option>
                         <option value="2">Bolivia</option>
@@ -49,15 +50,22 @@
                         <option value="11">Venezuela</option>
                     </select>
                 </div>
-                <button id="logged" type="button">Register</button>
+                <button id="registerButton" type="button">Register</button>
                 <div class="links">
                     <ul>
-                        <li><a href="./login.html">Already have an account?</a></li>
+                        <li id="account"><a href="./login.html">Already have an account?</a></li>
                     </ul>
                 </div>
+                <div id="errorMessages" class="error"></div>
             </form>
         </div>
     </section>
+    
+    <script src="./../js/register.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

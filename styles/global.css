@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
     padding: 0;
@@ -11,23 +11,22 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 100%;
-    font-family: "Poppins", sans-serif;
-    background: linear-gradient(-45deg, #4158D0, #e560dc, #ffb374, #ef5f5f, #d840b6);
-    background-size: 400% 400%;
-    animation: color 12s ease-in-out infinite;
+    font-family: "Inter", sans-serif;
+    background: #f8f9fa;
 }
 
-header {
+#header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 60px;
+    padding: 5px 60px;
     position: fixed;
     z-index: 999;
-    background: transparent;
-    backdrop-filter: blur(5px);
+    background: #2b3035;
+    box-shadow: 0 3px 4px 0 hsla(0, 0%, 0%, 0.1);
 }
+
 
 #menu li {
     list-style: none;
@@ -36,33 +35,32 @@ header {
 }
 
 #menu li a {
-    color: #ffe5ec;
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 14px;
     transition: .3s ease-in-out;
 }
 
 #menu li a:hover {
-    color: #644c92;
+    color: #20c997;
 }
 
 #logo {
-    cursor: pointer;
+    font-weight: 600;
     text-transform: uppercase;
-    transition: opacity 0.3s;
-    color: #ffe5ec;
+    font-size: 20px;
+    background: #20c997;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin: 5px;
+    transition: .2s ease-in-out;
 }
 
 #logo:hover {
-    animation: blink 1s infinite;
-}
-
-.icons {
-    font-size: 2.8rem;
-    color: #fff;
-    cursor: pointer;
-    display: none;
+    transform: scale(0.9);
 }
 
 @keyframes color {
@@ -79,19 +77,10 @@ header {
     }
 }
 
-@keyframes blink {
-    0%, 50%, 100% {
-        opacity: 1;
-    }
-
-    25%, 75% {
-        opacity: 0;
-    }
-}
-
 @media (max-width: 600px) {
-    header {
+    #header {
         padding: 44px 40px;
+        background: #2b3035;
     }
 
     .nav {

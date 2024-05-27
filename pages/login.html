@@ -5,45 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9567d7dc41.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/login.css">
     <title>Login</title>
 </head>
 
 <body>
     <section class="container" id="login">
+
         <div class="logo">
             <a href="../index.html">
-                <i class="fa-solid fa-arrow-left-long" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
             </a>
         </div>
-        <div class="form-content">
-            <h1 id="title-s">Login</h1>
-            <form>
-                <div class="input-group">
-                    <p>Do you need an account?
-                        <a href="#">Press Here</a>
-                    </p>
-                    <div class="input-field">
-                        <input type="email" placeholder="Email">
+
+        <div class="container">
+            <div class="form-content" data-aos="zoom-in-up" data-aos-duration="1000">
+                <h1 id="title-s">Login</h1>
+                <form id="form">
+                    <div class="input-group">
+                        <p>Do you need an account?
+                            <a href="../pages/signup.html">Press Here</a>
+                        </p>
+                        <label class="input-field">
+                            <input id="email" type="text" placeholder="Email" required>
+                        </label>
+                        <label class="input-field">
+                            <input id="password" type="password" placeholder="Password" required>
+                        </label>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox">
+                            <span>Keep Logged In</span>
+                        </div>
                     </div>
-                    <div class="input-field">
-                        <input type="password" placeholder="Password">
+                    <input id="logged" class="input-submit" type="submit" value="Login">
+                    <div class="links">
+                        <ul>
+                            <li><a href="#">Forgot password?</a></li>
+                            <li><a href="#">Can't log in?</a></li>
+                        </ul>
                     </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="checkbox">
-                        <span>Keep Logged In</span>
-                    </div>
-                </div>
-                <button id="logged" type="button">Login</button>
-                <div class="links">
-                    <ul>
-                        <li><a href="#">Forgot password?</a></li>
-                        <li><a href="#">Can't log in?</a></li>
-                    </ul>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/validation.js"></script>
 </body>
 
 </html>
