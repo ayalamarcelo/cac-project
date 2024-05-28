@@ -13,13 +13,13 @@
 }
 
 .bookcase {
-    width: 240px;
+    width: 260px;
     height: 54vh;
     margin: 10px;
     padding: 20px;
     background-color: transparent;
     backdrop-filter: blur(2px);
-    border: 1px solid #2b3035;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     font-size: 14px;
