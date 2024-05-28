@@ -1,6 +1,6 @@
-<h1 align="center">Bookstore Page Application Project</h1>
+<h1 align="center">Bookstore Web Project</h1>
 
-<p aling="center">Table of Contents</p>
+<p aling="center">Table of Contents:</p>
 
 - [Installation](#installation)
 - [API Usage](#api-usage)
