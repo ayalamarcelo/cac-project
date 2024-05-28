@@ -45,34 +45,14 @@ body {
 }
 
 #logo {
-    font-weight: 600;
     text-transform: uppercase;
-    font-size: 20px;
-    background: #20c997;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid #fff;
     cursor: pointer;
     color: #fff;
-    padding: 5px 10px;
-    border-radius: 2px;
+    padding: 6px 14px;
     margin: 5px;
-    transition: .2s ease-in-out;
-}
-
-#logo:hover {
-    transform: scale(0.9);
-}
-
-@keyframes color {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 100%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 @media (max-width: 600px) {

@@ -1,8 +1,7 @@
 <h1 align="center">Bookstore Page Application Project</h1>
 
-## Table of Contents
+<p aling="center">Table of Contents</p>
 
-- [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [API Usage](#api-usage)
 - [Contributing](#contributing)
