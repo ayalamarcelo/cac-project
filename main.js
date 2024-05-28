@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const apiURL = 'https://www.googleapis.com/books/v1/volumes?q=related:Kasuo+Ishiguro&maxResults=30&langRestrict=en&filter=ebooks';
+    const apiURL = 'https://www.googleapis.com/books/v1/volumes?q=related:kasuo+ishiguro&maxResults=30&langRestrict=en&filter=ebooks';
 
     const fetchBooks = async () => {
         try {
