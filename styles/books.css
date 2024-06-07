@@ -1,39 +1,52 @@
 .wrapper {
     background-color: #f8f9fa;
-    background-image: radial-gradient(#2b3035 0.6000000000000001px, #f8f9fa 0.6000000000000001px);
+    background-image: radial-gradient(#2b3035 0.6px, #f8f9fa 0.6px);
     background-size: 12px 12px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 5vh 0;
+  }
 
-#books {
+  #books {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 10vh;
-}
+    margin: 5vh 2vw;
+    width: 100%;
+    max-width: 1200px;
+  }
 
-.bookcase {
-    width: 240px;
-    height: 54vh;
+  .bookcase {
+    flex: 1 1 260px;
+    max-width: 260px;
+    min-height: 54vh;
     margin: 10px;
     padding: 20px;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(2px);
-    border: 1px solid #2b3035;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    font-size: 14px;
+    font-size: .9rem;
     color: #2b3035;
     text-align: center;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-.bookcase:hover {
+  .bookcase:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
+  }
 
-.bookcase img {
-    width: 150px;
+  .bookcase img {
+    width: 100%;
+    max-width: 150px;
     height: auto;
-    margin-bottom: 20px;
-}
+    margin: 0 auto 20px;
+    max-height: 30vh;
+  }

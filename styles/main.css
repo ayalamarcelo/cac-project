@@ -1,86 +1,107 @@
 .container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    gap: 10px;
-    overflow: hidden;
-    background: url(./../assets/priscilla-du-preez-GgtxccOjIXE-unsplash.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 800px;
+  overflow: hidden;
+  background: url(./../assets/priscilla-du-preez-GgtxccOjIXE-unsplash.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
 }
 
-.box-left {
-    background-color: transparent;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-    width: 30%;
-    height: 50vh;
-    padding: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #fff;
+.search-box {
+  background-color: #ffffff20;
+  backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 38px 57px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
 }
 
-.box-right {
-    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-    width: 45%;
-    height: 50vh;
-    background: url(./../assets/top10-fiction-1600x800.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+.search-box h1 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
-.box-left h1 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bolder;
-    font-size: 34px;
-    margin-bottom: 10px;
-    color: #fff;
+.search-box p {
+  text-align: left;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
-.box-left p {
-    font-weight: 300;
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #fff
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
 }
 
-.box-left button {
-    padding: 15px 30px;
-    font-size: 1rem;
-    border: 1px solid #fff;
-    background: transparent;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
+.search-container input {
+  width: 100%;
+  padding: 14px 15px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: none;
+  background-color: #2f2f2f;
+  color: #fff;
+  outline: none;
+  transition: border-color 0.3s ease;
 }
 
-.box-left button:hover {
-    border: 1px solid #050200;
-    background: #050200;
+.search-container input::placeholder {
+  color: #fff;
 }
 
+.search-container button {
+  position: absolute;
+  right: 0;
+  top: 48%;
+  transform: translateY(-48%);
+  background-color: #212121;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9a9a9a;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 
-@media (width < 1200px) {
-    .container {
-        flex-direction: column;
-    }
+.search-container button:hover {
+  background: #67666678;
+}
 
-    .box-left {
-        width: 80%;
-        height: auto;
-    }
+.search-container button .icon-search {
+  font-size: 1.2rem;
+}
 
-    .box-right {
-        display: none;
-    }
-
-    .box-left h1,
-    p {
-        font-size: auto;
-    }
+#scrollButton {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  color: #939393;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  transition: opacity 0.3s;
+}
+ 
+.hidden {
+  opacity: 0;
+  pointer-events: none;
 }

@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9567d7dc41.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/books.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/global.css">
     <title>Website</title>
 </head>
@@ -15,7 +16,7 @@
 <body>
     <section id="home">
         <header id="header">
-            <span id="logo">Bookshelf</span>
+            <span id="logo">Bookstore</span>
 
             <nav class="nav">
                 <ul id="menu">
@@ -28,14 +29,16 @@
         </header>
         <main>
             <div class="container">
-                <div class="box-left" data-aos="zoom-in-up" data-aos-duration="3000">
-                    <h1>Latest titles to add to your bookshelf</h1>
-                    <p>From edge-of-your-seat thrillers to swoon-worthy love stories, discover the most anticipated
-                        new releases coming out!
-                    </p>
-                    <button type="button">Learn More</button>
+                <div class="search-box" data-aos="zoom-in-up" data-aos-duration="3000">
+                    <h1>Latest Titles To Add To Your Bookshelf</h1>
+                    <p>From edge-of-your-seat thrillers to swoon-worthy love stories, discover the most anticipated new
+                        releases coming out!</p>
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search">
+                        <button type="button" id="searchButton"><i class="fas fa-search icon-search"></i></button>
+                    </div>
+                    <button id="scrollButton" class="hidden"><i class="fa-solid fa-chevron-down fa-fade"></i></button>
                 </div>
-                <div class="box-right" data-aos="zoom-in-up" data-aos-duration="3000"></div>
             </div>
         </main>
     </section>
