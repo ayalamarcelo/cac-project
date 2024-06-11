@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9567d7dc41.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/back-to-top-btn.css">
     <link rel="stylesheet" href="./styles/books.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/footer.css">
@@ -31,8 +32,8 @@
             <div class="container">
                 <div class="search-box" data-aos="zoom-in-up" data-aos-duration="3000">
                     <h1>Latest Titles To Add To Your Bookshelf</h1>
-                    <p>From edge-of-your-seat thrillers to swoon-worthy love stories, discover the most anticipated new
-                        releases coming out!</p>
+                    <p>From edge-of-your-seat thrillers to swoon-worthy love stories, discover the most anticipated
+                        new releases coming out!</p>
                     <div class="search-container">
                         <input type="text" id="searchInput" placeholder="Search">
                         <button type="button" id="searchButton"><i class="fas fa-search icon-search"></i></button>
@@ -43,11 +44,17 @@
         </main>
     </section>
     <section class="wrapper">
-        <div id="books" data-aos="zoom-in-up" data-aos-duration="3000"></div>
+        <div class="box">
+            <h2>Featured Books</h2>
+        </div>
+        <div id="books" data-aos="zoom-in-bottom" data-aos-duration="3000"></div>
     </section>
     <footer>
         <div id="footer"></div>
     </footer>
+
+    <a href="#" class="top">Back to Top</a>
+
     <script src="./main.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
