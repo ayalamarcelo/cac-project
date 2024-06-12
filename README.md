@@ -1,4 +1,4 @@
-<h1 align="center">Bookstore Web Project</h1>
+<h1 align="center">Bookstore</h1>
 
 <p align="center">Table of Contents:</p>
 
