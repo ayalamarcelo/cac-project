@@ -1,6 +1,6 @@
 <h1 align="center">Bookstore</h1>
 
-<p align="center">Table of Contents:</p>
+## Table of Contents:
 
 - [Installation](#installation)
 - [API Usage](#api-usage)
