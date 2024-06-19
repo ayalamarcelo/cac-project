@@ -58,8 +58,6 @@ git push origin feature/your-feature-name
 > We use Gitmoji for commits
 
 ```markdown
-
-? Choose a gitmoji:
 ❓  :speech_balloon: - Adding comments
 ✨  :sparkles: - Adding a new feature
 ➕  :heavy_plus_sign: - Adding a dependency
