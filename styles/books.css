@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&family=Montserrat:wght@400;500;600&display=swap");
 
 .box {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20vh;
-  background: url(../assets/bg-banner.jpg) no-repeat;
+  height: 15vh;
   background-size: cover;
+  background-color: #f6f6f6;
+  background-image: radial-gradient(#2b3035 0.9px, #f6f6f6 0.9px);
+  background-size: 18px 18px;
 }
 
 h2 {
-  font-family: "Source Serif 4", serif;
-  font-size: 36px;
-  text-decoration: overline;
-  font-style: italic;
+  font-family: "Montagu Slab", serif;
+  font-size: 29px;
   padding: 10px;
-  color: #000;
+  color: #2b3035;
   margin: 0;
 }
 
@@ -27,7 +27,8 @@ h2 {
   align-items: center;
   min-height: 100vh;
   background: #f6f6f6;
-  opacity: 10; 
+  opacity: 10;
+  padding: 5vh;
 }
 
 #books {
@@ -35,7 +36,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 5vh 2vw;
+  /* margin: 5vh 2vw; */
   width: 100%;
   max-width: 1200px;
 }
@@ -45,22 +46,25 @@ h2 {
   flex-direction: column;
   align-items: center;
   flex: 1 1 250px;
-  max-width: 255px;
+  max-width: 230px;
   margin: 10px;
   padding: 20px;
-  background: #fff;
+  background: #f4f4f4;
+  border: 2px solid #ddd;
   font-size: .9rem;
   color: #2f2f2f;
   text-align: center;
   position: relative;
-  box-shadow: 0 3px 7px 1px rgba(0,0,0,0.12);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.12);
+  transition: .3s ease-in-out;
+  transition: transform .3s ease-in-out;
   min-height: 350px;
 }
 
 .bookcase:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 24px 48px rgba(0, 0, 0, 0.15);
+  /* transform: translateY(-10px); */
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 0 24px 48px rgba(0, 0, 0, 0.15); */
+  border: 2px solid #989898;
 }
 
 .bookcase img {
@@ -82,17 +86,19 @@ h2 {
 }
 
 .book-title {
-  font-size: 1.2rem;
+  font-family: "Montagu Slab", serif;
+  font-size: 1rem;
   margin: 10px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
+  color: #2b3035;
 }
 
 .book-author {
-  font-size: 1rem;
-  color: #555;
+  font-size: .8rem;
+  color: #2b3035;
   margin-bottom: 10px;
   white-space: nowrap;
   overflow: hidden;
@@ -102,44 +108,23 @@ h2 {
 
 .book-button {
   margin-top: 10px;
+  border-radius: 5px;
   padding: 10px 20px;
-  background-color: #0077b5;
+  background-color: #4663d9;
   color: white;
   border: none;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   font-size: 0.9rem;
+  font-weight: 600;
   transition: background-color 0.3s ease;
-}
-
-.book-icons {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.book-icons i {
-  margin-bottom: 10px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  color: #888;
-  transition: color 0.3s ease;
-}
-
-.book-icons i:hover {
-  color: #000;
 }
 
 .book-cover {
   width: 100%;
   height: 200px;
   overflow: hidden;
-  background: url(../assets/bg-bookcase.png) no-repeat;
-  background-size: contain;
 }
 
 .book-cover img {

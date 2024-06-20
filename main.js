@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const apiBaseURL = 'https://www.googleapis.com/books/v1/volumes';
-    const maxResults = 28;
+    const maxResults = 8;
     const langRestrict = 'en';
     const filter = 'ebooks';
 
@@ -33,18 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
             bookDiv.classList.add('bookcase');
             bookDiv.id = `book${index + 1}`;
             bookDiv.innerHTML = `
-                <div class="book-icons">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-eye"></i>
-                </div>
                 <div class="book-cover">
                 <img src="${book.coverUrl}" alt="Book Cover">
                 </div>
                 <div class="bookcase-content">
                     <h3 class="book-title">${book.title}</h3>
                     <p><strong>Author:</strong> ${firstAuthor}</p>
-                    <a href="#" class="book-button">Learn more</a>
+                    <a href="#" class="book-button">Add To Cart</a>
                 </div>
             `;
             booksContainer.appendChild(bookDiv);
