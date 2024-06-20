@@ -1,18 +1,17 @@
   .top {
     --offset: 100px; /* control when the button appear */
     position: fixed;
-    bottom: 20px;      
+    bottom: 40px;      
     margin-right: 10px; 
     place-self: end;
     margin-top: calc(100vh + var(--offset));
-  
     width: 60px;
     aspect-ratio: 1;
-    background: #ff8b24;
+    background: #4261d5;
     border-radius: 10px;
     font-size: 0;
   }
-
+    
   .top:before {
     content: "";
     position: absolute;

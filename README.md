@@ -1,6 +1,6 @@
-<h1 align="center">Bookstore Web Project</h1>
+<h1 align="center">Bookstore</h1>
 
-<p align="center">Table of Contents:</p>
+## Table of Contents:
 
 - [Installation](#installation)
 - [API Usage](#api-usage)
@@ -58,8 +58,6 @@ git push origin feature/your-feature-name
 > We use Gitmoji for commits
 
 ```markdown
-
-? Choose a gitmoji:
 ❓  :speech_balloon: - Adding comments
 ✨  :sparkles: - Adding a new feature
 ➕  :heavy_plus_sign: - Adding a dependency

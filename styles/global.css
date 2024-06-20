@@ -23,7 +23,6 @@ body {
     background: #2b3035;
 }
 
-
 #menu li {
     list-style: none;
     display: inline-block;
@@ -40,7 +39,7 @@ body {
 }
 
 #menu li a:hover {
-    color: #ff8b24;
+    color: #20c997;
 }
 
 #logo {
@@ -52,6 +51,16 @@ body {
     color: #fff;
     padding: 6px 14px;
     margin: 5px;
+}
+
+#subscribe {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    background: url(../assets/priscilla-du-preez-AOdELn6senM-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 @media (max-width: 600px) {
