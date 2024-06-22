@@ -7,7 +7,7 @@
     margin-top: calc(100vh + var(--offset));
     width: 60px;
     aspect-ratio: 1;
-    background: #4261d5;
+    background: #222222;
     border-radius: 10px;
     font-size: 0;
   }
